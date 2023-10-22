@@ -3,7 +3,7 @@ import { LinkRoutes } from '@/utils'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useState } from 'react'
-import { CloseIcon, MenuIcon } from '../index'
+import { Button, CloseIcon, MenuIcon } from '../index'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,7 +11,7 @@ function Navbar() {
 
   const classes = {
     nav: clsx(
-      'pointer-events-none fixed left-0 top-0 grid h-3/4 w-full opacity-0 backdrop-blur-xl transition-opacity duration-300 lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
+      'pointer-events-none fixed left-0 top-0 z-10 grid h-3/4 w-full opacity-0 backdrop-blur-xl transition-opacity duration-300 lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
       isMenuOpen && 'pointer-events-auto opacity-100'
     ),
     items: clsx(
@@ -32,9 +32,9 @@ function Navbar() {
             </li>
           ))}
           <li>
-            <button className='rounded-lg bg-black px-7 py-3 text-sm font-semibold text-white shadow-2xl transition-colors duration-300 hover:bg-pink-500'>
+            <Button border='lg' color='black'>
               Get Started
-            </button>
+            </Button>
           </li>
           <li className='lg:hidden'>
             <button onClick={changeMenuState}>
