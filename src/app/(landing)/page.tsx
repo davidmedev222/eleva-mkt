@@ -1,4 +1,4 @@
-import { BrandMarquee, Hero, ServiceListSection, ServiceSection } from '@/components'
+import { BrandMarquee, CustomerSection, Hero, ServiceListSection, ServiceSection } from '@/components'
 
 function HomePage() {
   return (
@@ -27,6 +27,7 @@ function HomePage() {
         image='/assets/service3.webp'
         direction='rtl'
       />
+      <CustomerSection />
     </main>
   )
 }
