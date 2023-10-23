@@ -1,5 +1,6 @@
 import { Header } from '@/components'
-import './globals.css'
+import { rubik } from '@/styles'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Eleva MKT',
@@ -12,8 +13,8 @@ interface Props {
 
 function RootLayout({ children }: Props) {
   return (
-    <html lang='en'>
-      <body>
+    <html lang='en' className={`${rubik.variable}`}>
+      <body className='font-rubik'>
         <Header />
         {children}
       </body>
