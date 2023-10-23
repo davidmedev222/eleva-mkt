@@ -4,7 +4,7 @@ import { AmazonIcon, AppleIcon, GoogleIcon, MetaIcon, MicrosoftIcon } from '../i
 function BrandMarquee() {
   return (
     <div className='grid h-24'>
-      <Marquee autoFill gradient gradientColor='rgb(255, 255, 255)' pauseOnHover>
+      <Marquee autoFill gradient gradientColor='rgb(255, 255, 255)'>
         <div className='mx-10'>
           <AmazonIcon />
         </div>
