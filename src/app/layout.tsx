@@ -1,4 +1,4 @@
-import { Header } from '@/components'
+import { Footer, Header } from '@/components'
 import { rubik } from '@/styles'
 import '../styles/globals.css'
 
@@ -17,6 +17,7 @@ function RootLayout({ children }: Props) {
       <body className='font-rubik'>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
