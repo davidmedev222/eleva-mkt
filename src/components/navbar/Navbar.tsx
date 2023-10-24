@@ -11,7 +11,7 @@ function Navbar() {
 
   const classes = {
     nav: clsx(
-      'pointer-events-none fixed left-0 top-0 z-10 grid h-3/4 w-full bg-white opacity-0 lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
+      'pointer-events-none fixed left-0 top-0 z-10 grid h-full w-full bg-white opacity-0 lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
       isMenuOpen && 'pointer-events-auto opacity-100'
     ),
     items: clsx(

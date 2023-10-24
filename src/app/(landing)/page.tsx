@@ -1,4 +1,11 @@
-import { BrandMarquee, CustomerSection, Hero, ServiceListSection, ServiceSection } from '@/components'
+import {
+  BrandMarquee,
+  CustomerSection,
+  Hero,
+  PricingListSection,
+  ServiceListSection,
+  ServiceSection
+} from '@/components'
 
 function HomePage() {
   return (
@@ -28,6 +35,7 @@ function HomePage() {
         direction='rtl'
       />
       <CustomerSection />
+      <PricingListSection />
     </main>
   )
 }
