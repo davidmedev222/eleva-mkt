@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { useState } from 'react'
 import { Heading, PricingList } from '../index'
 
-function PricingListSection() {
+function PricingSection() {
   const [pricing, setPricing] = useState(0)
   const classes = clsx(
     'w-36 rounded-lg py-2.5 font-medium text-gray-500 data-[active=true]:bg-pink-500 data-[active=true]:text-white'
@@ -28,4 +28,4 @@ function PricingListSection() {
   )
 }
 
-export default PricingListSection
+export default PricingSection

@@ -1,8 +1,9 @@
 import {
   BrandMarquee,
   CustomerSection,
+  FaqSection,
   Hero,
-  PricingListSection,
+  PricingSection,
   ServiceListSection,
   ServiceSection
 } from '@/components'
@@ -35,7 +36,8 @@ function HomePage() {
         direction='rtl'
       />
       <CustomerSection />
-      <PricingListSection />
+      <PricingSection />
+      <FaqSection />
     </main>
   )
 }
