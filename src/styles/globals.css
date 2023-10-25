@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* Custom inputs */
   [type='text'],
   input:where(:not([type])),
   [type='email'],
@@ -22,9 +23,24 @@
     @apply rounded-full border-transparent bg-gray-200 px-5 py-4 text-black/50 placeholder:text-black/50 focus:border-pink-500 focus:ring-pink-500;
   }
 
-  /* [aria-invalid='true'] {
-    @apply ring-1 ring-red-600  focus:ring-red-600;
-  } */
+  /* Custom scrollbar */
+  body {
+    --sb-track-color: theme(backgroundColor.white);
+    --sb-thumb-color: theme(backgroundColor.pink.500);
+    --sb-size: 6px;
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 32px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 32px;
+  }
 }
 
 @layer components {
