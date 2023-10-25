@@ -1,11 +1,6 @@
 export enum Routes {
   Home = '/',
-  Pricing = '/pricing',
-  Blog = '/blog',
-  Login = '/login'
+  Pricing = '/pricing'
 }
 
-export const LinkRoutes = [
-  { id: crypto.randomUUID(), name: 'Pricing', href: Routes.Pricing },
-  { id: crypto.randomUUID(), name: 'Blog', href: Routes.Blog }
-]
+export const LinkRoutes = [{ id: crypto.randomUUID(), name: 'Pricing', href: Routes.Pricing }]
