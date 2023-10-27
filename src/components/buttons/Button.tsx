@@ -10,7 +10,7 @@ interface Props {
 function Button({ children, color, border, spacing }: Props) {
   const classes = clsx(
     'px-7 py-3 font-semibold text-white shadow-2xl transition-colors duration-300',
-    color === 'black' && 'bg-black hover:bg-pink-500',
+    color === 'black' && 'bg-black hover:bg-pink-500 dark:outline dark:outline-pink-500',
     color === 'pink' && 'bg-pink-500 hover:bg-pink-700',
     border === 'lg' && 'rounded-lg',
     border === 'full' && 'rounded-full',

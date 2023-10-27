@@ -3,7 +3,7 @@ import { LinkRoutes } from '@/utils'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Button, CloseIcon, MenuIcon } from '../index'
+import { Button, CloseIcon, DropdownTheme, MenuIcon } from '../index'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -11,7 +11,7 @@ function Navbar() {
 
   const classes = {
     nav: clsx(
-      'pointer-events-none fixed left-0 top-0 z-10 grid h-full w-full bg-white opacity-0 lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
+      'pointer-events-none fixed left-0 top-0 z-10 grid h-full w-full bg-white opacity-0 dark:bg-black lg:pointer-events-auto lg:static lg:block lg:h-auto lg:w-auto lg:opacity-100',
       isMenuOpen && 'pointer-events-auto opacity-100'
     ),
     items: clsx(
@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <>
       <button onClick={changeMenuState}>
-        <MenuIcon className='lg:hidden' size={32} />
+        <MenuIcon className='fill-current lg:hidden' size={32} />
       </button>
       <nav className={classes.nav}>
         <ul className={classes.items}>
@@ -38,11 +38,12 @@ function Navbar() {
           </li>
           <li className='lg:hidden'>
             <button onClick={changeMenuState}>
-              <CloseIcon className='mx-auto' size={32} />
+              <CloseIcon className='mx-auto fill-current' size={32} />
             </button>
           </li>
         </ul>
       </nav>
+      <DropdownTheme />
     </>
   )
 }

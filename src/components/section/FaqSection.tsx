@@ -6,7 +6,7 @@ function FaqSection() {
       <Heading as='h6' className='text-center'>
         Frequently asked questions
       </Heading>
-      <p className='text-center text-gray-600 sm:text-lg'>
+      <p className='text-center text-gray-600 dark:text-gray-400 sm:text-lg'>
         Find answers to your questions about data analysis and our platform.
       </p>
       <FaqList />

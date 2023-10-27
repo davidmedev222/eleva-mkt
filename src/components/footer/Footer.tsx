@@ -14,10 +14,10 @@ import {
 
 function Footer() {
   return (
-    <footer className='bg-gradient-to-t from-pink-100'>
+    <footer className='bg-gradient-to-t from-pink-50 dark:from-pink-950'>
       <div className='mx-auto max-w-screen-xl px-5 py-16 text-center'>
         <Heading as='h6'>Try Our Marketing Services for Free</Heading>
-        <p className='text-gray-600 sm:text-lg'>No obligation. Try us for free today.</p>
+        <p className='text-gray-600 dark:text-gray-400 sm:text-lg'>No obligation. Try us for free today.</p>
         <form className='mx-auto grid max-w-xl gap-4 py-11 sm:grid-cols-[2fr_1fr]'>
           <input type='email' placeholder='Enter Your Emaill Address' />
           <Button spacing='md' border='full' color='pink'>
@@ -32,7 +32,9 @@ function Footer() {
                 Eleva <span className='text-pink-500'>MKT</span>
               </span>
             </Link>
-            <p className='text-gray-600'>Unleash the potential of your business with powerful data analysis.</p>
+            <p className='text-gray-600 dark:text-gray-400'>
+              Unleash the potential of your business with powerful data analysis.
+            </p>
           </li>
           <li className='space-y-2.5 text-lg font-medium sm:text-xl'>
             <span>Find us On Social Media</span>
@@ -55,19 +57,19 @@ function Footer() {
             <span>Get in Touch With Us</span>
             <Link
               href='tel:+1(954)828-2220'
-              className='flex items-center justify-center gap-x-2.5 text-sm text-gray-600'
+              className='flex items-center justify-center gap-x-2.5 text-sm text-gray-600 dark:text-gray-400'
             >
               <TelefoneIcon /> +1 (954) 828-2220
             </Link>
             <Link
               href='mailto:elevamkt@example.com'
-              className='flex items-center justify-center gap-x-2.5 text-sm text-gray-600'
+              className='flex items-center justify-center gap-x-2.5 text-sm text-gray-600 dark:text-gray-400'
             >
               <EmailIcon /> elevamkt@example.com
             </Link>
           </li>
         </ul>
-        <p className='mt-5 text-sm font-semibold text-gray-600'>© 2023 Eleva MKT, Inc.</p>
+        <p className='mt-5 text-sm font-semibold text-gray-600 dark:text-gray-400'>© 2023 Eleva MKT, Inc.</p>
       </div>
     </footer>
   )

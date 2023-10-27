@@ -1,4 +1,6 @@
+'use client'
 import clsx from 'clsx'
+import { useTheme } from 'next-themes'
 import Marquee from 'react-fast-marquee'
 import { ReviewCard } from '../index'
 
@@ -8,11 +10,13 @@ interface Props {
 }
 
 function ReviewMarquee({ className, direction }: Props) {
+  const { theme } = useTheme()
+  const gradientColor = theme === 'light' ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)'
   const classes = clsx('grid h-72', className)
 
   return (
     <div className={classes}>
-      <Marquee direction={direction} gradient gradientColor='rgb(255, 255, 255)' gradientWidth={70} autoFill>
+      <Marquee direction={direction} gradient gradientColor={gradientColor} gradientWidth={70} autoFill>
         <ReviewCard
           icon='twitter'
           className='mx-2.5'

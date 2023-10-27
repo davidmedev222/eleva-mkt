@@ -26,7 +26,7 @@ function ServiceSection({ direction, service, heading, description, image }: Pro
       <div className={classes.info}>
         <CategoryHeading>{service}</CategoryHeading>
         <Heading as='h3'>{heading}</Heading>
-        <p className='mt-4 text-gray-600 sm:mt-9 sm:text-lg'>{description}</p>
+        <p className='mt-4 text-gray-600 dark:text-gray-400 sm:mt-9 sm:text-lg'>{description}</p>
       </div>
       <Image
         className={classes.image}

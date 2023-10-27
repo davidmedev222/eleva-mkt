@@ -5,7 +5,7 @@ interface Props {
 }
 
 function SendStickerBlue({ className }: Props) {
-  const classes = clsx('fill-black', className)
+  const classes = clsx('fill-black dark:fill-white', className)
 
   return (
     <svg
