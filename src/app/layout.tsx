@@ -1,6 +1,7 @@
 import { Footer, Header } from '@/components'
 import { rubik } from '@/styles'
 import '../styles/globals.css'
+import Providers from './providers'
 
 export const metadata = {
   title: 'Eleva MKT',
@@ -13,11 +14,13 @@ interface Props {
 
 function RootLayout({ children }: Props) {
   return (
-    <html lang='en' className={`${rubik.variable}`}>
-      <body className='font-rubik'>
-        <Header />
-        {children}
-        <Footer />
+    <html lang='en' suppressHydrationWarning className={`${rubik.variable}`}>
+      <body className='bg-white font-rubik text-black dark:bg-black dark:text-white'>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
