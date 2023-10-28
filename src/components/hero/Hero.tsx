@@ -1,4 +1,4 @@
-import { AvatarList, Button, SendStickerBlue, SendStickerYellow } from '../index'
+import { AvatarList, BlueSendSticker, Button, YellowSendSticker } from '../index'
 
 function Hero() {
   return (
@@ -19,8 +19,8 @@ function Hero() {
           Trusted by 100K+ people around the world
         </p>
       </div>
-      <SendStickerBlue className='absolute -right-1/4 top-12 hidden md:block' />
-      <SendStickerYellow className='absolute -left-1/4 top-[228px] hidden md:block' />
+      <BlueSendSticker className='absolute -right-1/4 top-12 hidden md:block' />
+      <YellowSendSticker className='absolute -left-1/4 top-[228px] hidden md:block' />
     </section>
   )
 }

@@ -4,7 +4,7 @@ interface Props {
   className?: string
 }
 
-function SendStickerBlue({ className }: Props) {
+function BlueSendSticker({ className }: Props) {
   const classes = clsx('fill-black dark:fill-white', className)
 
   return (
@@ -30,4 +30,4 @@ function SendStickerBlue({ className }: Props) {
   )
 }
 
-export default SendStickerBlue
+export default BlueSendSticker
