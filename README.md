@@ -14,5 +14,5 @@ Eleva MKT, explore our marketing services website. With a specialized focus on d
 ## **🎨 MOCKUPS**
 
 ![Eleva MKT website mockup](/public/mockups/elevamkt.webp)
-![Eleva MKT website mockup](/public/mockups/elevamkt.webp)
-![Eleva MKT website mockup](/public/mockups/elevamkt.webp)
+![Eleva MKT website mockup](/public/mockups/elevamkt2.webp)
+![Eleva MKT website mockup](/public/mockups/elevamkt3.webp)
